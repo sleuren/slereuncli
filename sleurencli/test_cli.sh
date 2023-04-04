@@ -4,7 +4,7 @@
 ##                          Test Sleuren CLI                                  ##
 ################################################################################
 
-LOG_FILE="test.log"
+LOG_FILE="sleuren.log"
 NOW=$(date +'%Y-%m-%d %a %T')
 
 # Function to test a CLI call
@@ -66,7 +66,6 @@ test "$CMD contacts list"
 test "$CMD servers"
 test "$CMD servers add"
 test "$CMD servers list"
-# test "$CMD servers update --tag test"
 test "$CMD servers remove"
 test "$CMD sites"
 test "$CMD sites add --url sleuren.com"
