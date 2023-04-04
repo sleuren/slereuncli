@@ -13,7 +13,7 @@ from .lib.sites import Sites
 from .lib.usertokens import UserTokens
 from .lib.statistics import Statistics
 
-__version__ = '1.0.0'
+__version__ = '1.0.1'
 
 cfg = Config(__version__)
 cli = argparse.ArgumentParser(prog='sleuren', description='CLI for Sleuren Monitoring')
