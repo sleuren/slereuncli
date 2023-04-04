@@ -1,7 +1,7 @@
 FROM ubuntu
 
 RUN apt-get update && apt-get -y install python3 && apt-get -y install pip
-RUN pip install sleuren-cli
+RUN pip install sleurencli
 
 COPY sleurencli/test_cli.sh /
 
