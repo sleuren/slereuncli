@@ -15,7 +15,7 @@ setuptools.setup(
     description='Sleuren CLI',
     long_description_content_type='text/markdown',
     long_description=readme,
-    url='https://github.com/sleuren/agent-cli',
+    url='https://github.com/sleuren/slereuncli',
     author='Sleuren',
     author_email='hello@sleuren.com',
     license='MIT',
