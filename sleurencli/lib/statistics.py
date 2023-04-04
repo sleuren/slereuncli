@@ -7,8 +7,7 @@ from prettytable import PrettyTable
 from .config import Config
 from .servers import Servers
 from .sites import Sites
-from .contacts import Contacts
-from .usertokens import UserTokens
+from .tokens import Tokens
 from .functions import printError, printWarn
 from .bcolors import bcolors
 
@@ -93,13 +92,9 @@ class Statistics(object):
             self.table.add_row([uptime_percentage_text, '% avg uptime of all ' + str(num_monitors) + ' sites'])
             self.table.add_row([ttfb_text, 'sec avg ttfb of all ' + str(num_monitors) + ' sites'])
 
-        contacts = Contacts(self.config)
-        if contacts.fetchData():
-            self.table.add_row([len(contacts.contacts), 'Contacts'])
-
-        usertokens = UserTokens(self.config)
-        if usertokens.fetchData():
-            self.table.add_row([len(usertokens.usertokens), 'User Tokens'])
+        tokens = Tokens(self.config)
+        if tokens.fetchData():
+            self.table.add_row([len(tokens.tokens), 'Tokens'])
 
         if (format == 'table'):
             print(self.table)

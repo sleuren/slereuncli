@@ -11,7 +11,7 @@ install_requires = ['configparser', 'prettytable', 'requests']
 
 setuptools.setup(
     name='sleurencli',
-    version='1.0.2',
+    version='1.0.3',
     description='Sleuren CLI',
     long_description_content_type='text/markdown',
     long_description=readme,

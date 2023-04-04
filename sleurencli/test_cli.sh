@@ -60,9 +60,6 @@ test "$CMD config"
 test "$CMD config --help"
 test "$CMD config print"
 test "$CMD config save"
-test "$CMD contacts"
-test "$CMD contacts add --name TestContact --email no-reply@sleuren.com"
-test "$CMD contacts list"
 test "$CMD servers"
 test "$CMD servers add"
 test "$CMD servers list"
@@ -73,15 +70,14 @@ test "$CMD sites list"
 test "$CMD sites list --help"
 test "$CMD sites list --csv"
 test "$CMD statistics"
-test "$CMD usertokens"
-test "$CMD usertokens list"
-test "$CMD usertokens list --csv"
+test "$CMD tokens"
+test "$CMD tokens list"
+test "$CMD tokens list --csv"
 
 sleep 10
 
 test "$CMD sites list --url sleuren.com"
 test "$CMD sites remove --url sleuren.com"
-test "$CMD contacts remove --name TestContact"
 
 echo
 echo "-------------------------------------"
