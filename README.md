@@ -4,8 +4,4 @@
   </a>
 </p>
 
-<<<<<<< HEAD
 ## Official sleuren cli for monitoring agent
-=======
-## Official sleuren cli for monitoring agent
->>>>>>> origin/main
