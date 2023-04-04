@@ -4,4 +4,4 @@
   </a>
 </p>
 
-## Official sleuren cli for monitoring agent
+## Official Sleuren cli
