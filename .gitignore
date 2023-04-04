@@ -7,9 +7,6 @@
 .DS_Store
 .vscode
 
-# config files that could contain confidential information
-*.ini
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
