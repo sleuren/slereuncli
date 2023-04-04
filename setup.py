@@ -11,7 +11,7 @@ install_requires = ['configparser', 'prettytable', 'requests']
 
 setuptools.setup(
     name='sleurencli',
-    version='1.0.1',
+    version='1.0.2',
     description='Sleuren CLI',
     long_description_content_type='text/markdown',
     long_description=readme,
@@ -39,7 +39,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     entry_points={
         'console_scripts': [
-            'sleuren=sleurencli.sleuren:main',
+            'sleurencli=sleurencli.sleurencli:main',
         ],
     },
     data_files=[('share/doc/sleurencli', [

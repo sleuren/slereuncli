@@ -49,7 +49,7 @@ function test
 if [[ -n $1 ]]; then
     CMD="$1"
 else
-    CMD="./sleuren.py"
+    CMD="./sleurencli.py"
 fi
 
 echo "--- Test $NOW ---" > "$LOG_FILE"

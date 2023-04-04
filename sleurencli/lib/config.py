@@ -37,7 +37,7 @@ class Config(object):
                 'User-Agent': 'Sleuren CLI ' + self.version,
             }
         else:
-            printError('ERROR: No API key specified in ' + self.filename + ". Please run \"sleuren config save --api-key YOUR_API_KEY\" to connect to your sleuren account.")
+            printError('ERROR: No API key specified in ' + self.filename + ". Please run \"sleurencli config save --api-key YOUR_API_KEY\" to connect to your sleuren account.")
             return {}
 
     def params(self):
@@ -125,7 +125,7 @@ class Config(object):
         if os.path.isfile(self.filename):
             print('config file:               ', self.filename)
         else:
-            print(f"config file:                {bcolors.WARNING}" + self.filename + f" does not exist. Please run \"sleuren config save --api-key YOUR_API_KEY\" to configure.{bcolors.ENDC}")
+            print(f"config file:                {bcolors.WARNING}" + self.filename + f" does not exist. Please run \"sleurencli config save --api-key YOUR_API_KEY\" to configure.{bcolors.ENDC}")
         print('CLI version:               ', self.version)
         print()
         print('Connection')
@@ -134,7 +134,7 @@ class Config(object):
         if self.api_key:
             print('api-key:                   ', self.api_key)
         else:
-            print(f"api-key:                    {bcolors.FAIL}No API key specified in " + self.filename + f". Please run \"sleuren config save --api-key YOUR_API_KEY\" to connect to your sleuren account.{bcolors.ENDC}")
+            print(f"api-key:                    {bcolors.FAIL}No API key specified in " + self.filename + f". Please run \"sleurencli config save --api-key YOUR_API_KEY\" to connect to your sleuren account.{bcolors.ENDC}")
         print('max items:                 ', self.max_items)
         print('hide ids:                  ', self.hide_ids)
         print('debug:                     ', self.debug)

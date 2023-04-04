@@ -13,10 +13,10 @@ from .lib.sites import Sites
 from .lib.usertokens import UserTokens
 from .lib.statistics import Statistics
 
-__version__ = '1.0.1'
+__version__ = '1.0.2'
 
 cfg = Config(__version__)
-cli = argparse.ArgumentParser(prog='sleuren', description='CLI for Sleuren Monitoring')
+cli = argparse.ArgumentParser(prog='sleurencli', description='CLI for Sleuren Monitoring')
 cli_subcommands = dict()
 
 def check_columns(columns):
@@ -94,8 +94,8 @@ def servers_add(args):
     if not token:
         print('First create a user token by executing:')
         print()
-        print('sleuren usertokens create')
-        print('sleuren usertokens list')
+        print('sleurencli usertokens create')
+        print('sleurencli usertokens list')
         print()
         token = '[YOUR_USER_TOKEN]'
 

@@ -7,5 +7,5 @@ COPY sleurencli/test_cli.sh /
 
 ENV api-key=""
 
-#ENTRYPOINT [ "sleuren", "config", "save", "--api-key" ]
-CMD ["sh", "-c", "sleuren config save --api-key ${api-key};sleuren sites list;./test_cli.sh"]
+#ENTRYPOINT [ "sleurencli", "config", "save", "--api-key" ]
+CMD ["sh", "-c", "sleurencli config save --api-key ${api-key};sleurencli sites list;./test_cli.sh"]
