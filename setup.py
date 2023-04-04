@@ -10,7 +10,7 @@ readme = open(os.path.join(here, 'README.md')).read()
 install_requires = ['configparser', 'prettytable', 'requests']
 
 setuptools.setup(
-    name='sleuren-cli',
+    name='sleurencli',
     version='1.0.0',
     description='Sleuren CLI',
     long_description_content_type='text/markdown',
@@ -39,10 +39,10 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     entry_points={
         'console_scripts': [
-            'sleuren=agent-cli.sleuren:main',
+            'sleuren=sleurencli.sleuren:main',
         ],
     },
-    data_files=[('share/doc/sleuren-cli', [
+    data_files=[('share/doc/sleurencli', [
         'sleuren.ini',
         'LICENSE',
         'README.md',

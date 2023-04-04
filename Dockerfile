@@ -1,9 +1,9 @@
 FROM ubuntu
 
 RUN apt-get update && apt-get -y install python3 && apt-get -y install pip
-RUN pip install agent-cli
+RUN pip install sleuren-cli
 
-COPY agent-cli/test_cli.sh /
+COPY sleurencli/test_cli.sh /
 
 ENV api-key=""
 
